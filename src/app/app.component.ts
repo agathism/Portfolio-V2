@@ -3,6 +3,8 @@ import { RouterOutlet } from '@angular/router';
 import { NavBarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 
+declare var particlesJS: any;
+
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -11,5 +13,9 @@ import { FooterComponent } from './components/footer/footer.component';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'Aichatou-Soumare-Portfolio-V2';
+  title = 'Portfolio';
+
+  ngOnInit(): void {
+    particlesJS.load('particles-js', '../assets/particles.json', null);
+}
 }

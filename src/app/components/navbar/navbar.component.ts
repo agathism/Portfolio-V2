@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
-  selector: 'app-nav',
+  selector: 'app-navbar',
   standalone: true,
   imports: [],
   templateUrl: './navbar.component.html',
